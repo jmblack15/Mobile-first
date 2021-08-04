@@ -139,14 +139,22 @@ main {
    color        : #757575;
 }
 
+.main__tables--container {
+   display: flex;
+   overflow-x: scroll;
+   overscroll-behavior: contain;
+   scroll-snap-type: x proximity;
+}
+
 .main__currency--table,
 .main__commissions--table {
    width      : 70%;
    min-width  : 235px;
    max-width  : 500px;
    height     : 360px;
-   margin     : 0 auto;
+   margin     : 10px 30px;
    font-family: 'Inter', sans-serif;
+   scroll-snap-align: center;
 }
 
 .main__currency--table .currency__table--title {
@@ -217,7 +225,7 @@ main {
 }
 
 .currency__table--container .table--right,
-.commissions__table--container,
+.commissions__table--container
 .table--right {
    font-size  : 1.4rem;
    font-weight: normal;

@@ -1,0 +1,13 @@
+.main__tables--container{
+   justify-content: center;
+}
+
+.main__product--detail {
+   display  : flex;
+   flex-wrap: wrap;
+   margin   : 0 auto;
+}
+
+.plans__container--slider {
+   justify-content: center;
+}
